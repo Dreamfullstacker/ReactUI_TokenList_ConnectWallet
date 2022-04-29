@@ -1,5 +1,12 @@
+body{
+  height: 100vh;
+}
+#root{
+  height: 100%;
+}
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -38,7 +45,6 @@
 }
 
 .warn-section {
-  height: 50px;
   background-color: yellow;
 }
 
@@ -49,8 +55,8 @@
 }
 
 .main-section {
-  height: 88vh;
   background-color: rgb(0, 0, 0);
+  height: 100%;
 }
 
 .work-section {
@@ -60,7 +66,12 @@
   width: 30vw !important;
   margin: auto;
 }
-
+.modal-content{
+  background-color: rgb(48, 48, 48)!important;
+}
+.white-text{
+  color: rgb(255, 255, 255)!important;
+}
 .grey-text{
   color: #a3a3a3;
 }
@@ -103,4 +114,42 @@ option {
   background-color: rgb(187, 147, 36) !important;
   border-color: rgb(187, 147, 36) !important;
   border-radius: 100px !important;
+}
+.modal-header{
+  border-bottom : #4f4f4f !important;
+}
+.modal-dialog{
+  max-width: 30vw !important;
+}
+@media only screen and (max-width: 1500px) {
+  .work-section {
+    width: 30vw !important;
+  }
+  .modal-dialog{
+    max-width: 30vw !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .work-section {
+    width: 40vw !important;
+  }
+  .modal-dialog{
+    max-width: 40vw !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .work-section {
+    width: 50vw !important;
+  }
+  .modal-dialog{
+    max-width: 50vw !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .work-section {
+    width: 70vw !important;
+  }
+  .modal-dialog{
+    max-width: 70vw !important;
+  }
 }
